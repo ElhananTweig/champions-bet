@@ -720,6 +720,10 @@ hr {
 # ── Auth ───────────────────────────────────────────────────────────────────────
 require_auth()
 
+# DEBUG — הסר אחרי הבדיקה
+creds_info = st.secrets["gcp_service_account"]
+st.write(f"Debug: Private key starts with: {creds_info['private_key'][:20]}")
+
 username = st.session_state["username"]
 is_admin = st.session_state["is_admin"]
 
