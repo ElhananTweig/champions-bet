@@ -1,26 +1,32 @@
 # sheets.py
 import gspread
-from google.oauth2 import service_account
 import streamlit as st
 import pandas as pd
 from datetime import datetime
 import pytz
 import uuid
 
-SCOPES = [
-    "https://www.googleapis.com/auth/spreadsheets",
-    "https://www.googleapis.com/auth/drive",
-]
 
 ISRAEL_TZ = pytz.timezone("Asia/Jerusalem")
 
 @st.cache_resource
 def get_client():
-    creds = service_account.Credentials.from_service_account_info(
-        st.secrets["gcp_service_account"],
-        scopes=SCOPES
-    )
-    return gspread.Client(auth=creds)
+    import json
+    import tempfile
+    import os
+
+    creds_dict = dict(st.secrets["gcp_service_account"])
+
+    with tempfile.NamedTemporaryFile(mode='w', suffix='.json', delete=False) as f:
+        json.dump(creds_dict, f)
+        temp_path = f.name
+
+    try:
+        gc = gspread.service_account(filename=temp_path)
+    finally:
+        os.unlink(temp_path)
+
+    return gc
 
 def get_sheet(sheet_name: str):
     client = get_client()
