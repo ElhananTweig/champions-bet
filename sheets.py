@@ -1,6 +1,6 @@
 # sheets.py
 import gspread
-from google.oauth2.service_account import Credentials
+from google.oauth2 import service_account
 import streamlit as st
 import pandas as pd
 from datetime import datetime
@@ -16,10 +16,11 @@ ISRAEL_TZ = pytz.timezone("Asia/Jerusalem")
 
 @st.cache_resource
 def get_client():
-    creds = Credentials.from_service_account_info(
-        st.secrets["gcp_service_account"], scopes=SCOPES
+    creds = service_account.Credentials.from_service_account_info(
+        st.secrets["gcp_service_account"],
+        scopes=SCOPES
     )
-    return gspread.authorize(creds)
+    return gspread.Client(auth=creds)
 
 def get_sheet(sheet_name: str):
     client = get_client()
