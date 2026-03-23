@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "championsbet-490323",
+  "private_key_id": "1cf608ed65e756f60c476a5ae41ba10aebca1756",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCV5yM+reVvHn0q\nt2LdQv0bf+r12YTmA3gmFdL7AUulBTaw2et6BBqIdT6IOvtjeRLsDaIlX322/nLY\nIKBX9+RxbusP6U6VLpJuhny8zVH8qwUY+qnJMcBJ3na6BDfoV+k0fl5XM3rgYS/u\nYd8x8I7b4nF05vTLPLI/GO+Ggy0Lp2i8X6+Ywk25U4vQ040NnBAPP+IIMylf2LRq\nZfKAGNwj1zSrLPxd1+D6tNtQqKmfwyy9eckvoZLBmT0OCezjY6T9Sb3q2yGiPKBS\nHcuQLu9wsFCLrQKZoN08C1N1jM/ACBVSoH2sado0BepIu5iNYqJC6VbC3LHFLOuF\nt2oKQiBbAgMBAAECggEABCKTSnwsiziplj88dxhieAWQJdusEADs1GF0vPTSW959\ncuUdWvPNsZGeZHlQDEnqN4sWu8uFtxcPdEkjcy8aOkt803xe7RGS+4Eyjq4RQr7g\nTfSYML3HwqHkNN8UlbsFwADJDxm98X5CKWQXbpQRX3JrKSDihCVhULPvjjkvHxZN\nJ+XdT34MP0iPiDccaYjDXdkbA+EniNukL+TCsq+gUVG/vSz4u7MHO+Ti4c3l8H6a\nXG7BwSwXwMx1vBLtNhKiOC+IuzCvi0LiuoVmDpkb+ufzr5ugLaseSs/gOxHWW4bD\n5wM7uNBBhaMxU8e3Dg44KA2FrGxRc0GZGXaz/OxJdQKBgQDF/sYyuT1kFezDfRgk\nR13lxREBEdlm3PXuAgKKKSAdNCwqJcJJLFE23D6Yt9wlt/9EljSAAJhi/vIddSzb\nCJqIcHq4GamlwzqNgotZpD5EFQEqEgjBbIsLk7d7FN/dtCL5uzbm/nYoPKPIp7cN\nigkKuWORVQqWz6rcbtjiyqgJDQKBgQDB0YoeHJ5eKB0ON76f4sBo1xvOD14FKKJi\nmB3v1zJ5LesJ6w9ghMDZtagQ+/RFozLH+u5oXuWPQ+65YF0QlIwh4sZZbWV9rBxX\nwzXxD4fMkARoXFUOanoCwekppME6o4md5oD3slI9jsbjlfdrrgptgzIe7oSkJBz5\nA39IEwclBwKBgDSxw8oIJuCWPTch+eTd4Y2fTxE70OJheEpp2ocuvs9G7WIiPnz/\nAHZbU4WNmVeoipWUbFCM2AGw3HsejluVBJu/Y8nPeqkVNmYnEjM/VRsFhBPQTOg9\nnRvtqm1ldtcodA6G1uvPWV8IFIb4q+08iX+DK46oVXMhvdWA4tQpH2OZAoGAG0gs\ngeqTXDuXQ24TVhwr61YEIvBE0sMSgIBbDmyjPS16fS3qPzLQlpSccK+WhcrgFgg7\nUNOyyoTMcKmgz/mo9Agg1WuxsovsfWoMCL+f5OqMxEfi7SGNxR+Ye3UmgeONNn3A\nv50JOIMFefmdFzorW5jxECuQ3i37Kg4U94c+JTcCgYEAoJrTvCMnF7ARzDs584Sf\nTrryJQHcE+xpBWp5VxI0A11Og/WRdOWUhpByqBu9wPzB1BYgbF93JkvJxCMYNL35\nbq/6n4d2gH4Ff7MlxTvSrJcjb6LGf/w9gTdu84jJrUYkA4GoWu1igWUTGatZZZBc\nMUMKYjzqzQQuTMQ8/bwEF3M=\n-----END PRIVATE KEY-----\n",
+  "client_email": "champions-bet-v2@championsbet-490323.iam.gserviceaccount.com",
+  "client_id": "110798340630320508608",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/champions-bet-v2%40championsbet-490323.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
