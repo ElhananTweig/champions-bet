@@ -11,6 +11,8 @@ ISRAEL_TZ = pytz.timezone("Asia/Jerusalem")
 
 @st.cache_resource
 def get_client():
+    import os
+    st.write("DEBUG: trying to load", os.path.exists("championsbet-490323-59706f5de67b.json"))
     return gspread.service_account(filename="championsbet-490323-59706f5de67b.json")
 
 def get_sheet(sheet_name: str):
