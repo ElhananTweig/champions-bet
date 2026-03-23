@@ -1,6 +1,5 @@
 # sheets.py
 import gspread
-from google.oauth2.service_account import Credentials
 import streamlit as st
 import pandas as pd
 from datetime import datetime
@@ -12,15 +11,7 @@ ISRAEL_TZ = pytz.timezone("Asia/Jerusalem")
 
 @st.cache_resource
 def get_client():
-    creds_info = dict(st.secrets["gcp_service_account"])
-    if "private_key" in creds_info:
-        creds_info["private_key"] = creds_info["private_key"].replace("\\n", "\n")
-    scope = [
-        "https://www.googleapis.com/auth/spreadsheets",
-        "https://www.googleapis.com/auth/drive",
-    ]
-    creds = Credentials.from_service_account_info(creds_info, scopes=scope)
-    return gspread.authorize(creds)
+    return gspread.service_account(filename="championsbet-490323-59706f5de67b.json")
 
 def get_sheet(sheet_name: str):
     client = get_client()
