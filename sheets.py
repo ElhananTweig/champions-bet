@@ -17,7 +17,7 @@ def get_client():
 
 def get_sheet(sheet_name: str):
     client = get_client()
-    spreadsheet = client.open(st.secrets["sheets"]["spreadsheet_name"])
+    spreadsheet = client.open("ChampionsBetDB")
     return spreadsheet.worksheet(sheet_name)
 
 @st.cache_data(ttl=30)
